@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+:root {
+    --neu-white: #ffffff73;
+    --neu-white-hover: #ffffff80;
+
+    --neu-black: #00000023;
+    --neu-black-hover: #00000030;
+
+    --main-color: #1A60F3; /* Edit this to your sites needs */
+    --main-color-dark: #1652d3; /* Edit this to your sites needs */
+}
+
+body {
+    background: #dde1e7;
+
+    font-family: 'Open Sans', sans-serif;
+    color: #001f3f;
+
+    margin: 25px;
+}
+
+.bevel {
+    border-radius: 29px;
+    background: #dde1e7;
+    box-shadow:  5px 5px 9px #bebebe,
+                -5px -5px 9px #ffffff;
+    padding: 5px;
+}
+.bevel-concave {
+    border-radius: 29px;
+    background: linear-gradient(145deg, #c7cbd0, #ecf1f7);
+    box-shadow:  4px 4px 6px #bebebe,
+                -4px -4px 6px #ffffff;
+    padding: 5px;
+}
+.bevel-convex {
+    border-radius: 29px;
+    background: linear-gradient(145deg, #ecf1f7, #c7cbd0);
+    box-shadow:  4px 4px 6px #bebebe,
+                -4px -4px 6px #ffffff;
+    padding: 5px;
+}
+.bevel-inset {
+    border-radius: 29px;
+    background: #dde1e7;
+    box-shadow: inset 4px 4px 6px #bebebe,
+                inset -4px -4px 6px #ffffff;
+    padding: 5px
+}
+
+.left { float: left; }
+.right { float: right; }
+.center { 
+    text-align: center;
+    display: block;
+    margin: auto;
+}
+
+.circle { border-radius: 50%; }
+
+.main { background-color: var(--main-color); }
+a {
+    text-decoration: none;
+    color: #003870;
+}
