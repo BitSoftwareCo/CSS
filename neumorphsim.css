@@ -8,7 +8,6 @@
     --neu-black-hover: #00000030;
 
     --main-color: #1A60F3; /* Edit this to your sites needs */
-    --main-color-dark: #1652d3; /* Edit this to your sites needs */
 }
 
 body {
@@ -59,8 +58,11 @@ body {
 
 .circle { border-radius: 50%; }
 
-.main { background-color: var(--main-color); }
+.active { background-color: var(--main-color); }
 a {
     text-decoration: none;
     color: #003870;
+}
+a:hover {
+    color: #025eb9;
 }
