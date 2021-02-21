@@ -1,0 +1,85 @@
+@import url("https://use.typekit.net/mos2klc.css");
+
+:root {
+    --background-main: #d8e1ea;   
+
+    --bevel-dark: #bebebe;
+    --bevel-light: #ffffff;
+
+    --main-color: #0F40EB;
+    --main-color-light: #1D68F5;
+    --main-color-dark: #0B32B7;
+}
+
+body {
+    background: var(--background-main);
+
+    font-family: tenon, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #001f3f;
+
+    margin: 25px;
+}
+
+.bevel {
+    border-radius: 29px;
+    background: var(--background-main);
+    box-shadow:  5px 5px 9px var(--bevel-dark),
+                -5px -5px 9px var(--bevel-light);
+    padding: 5px;
+}
+.bevel-concave {
+    border-radius: 29px;
+    background: linear-gradient(145deg, #c2cbd3, #e7f1fa);
+    box-shadow:  4px 4px 6px var(--bevel-dark),
+                -4px -4px 6px var(--bevel-light);
+    padding: 5px;
+}
+.bevel-convex {
+    border-radius: 29px;
+    background: linear-gradient(145deg, #e7f1fa, #c2cbd3);
+    box-shadow:  4px 4px 6px var(--bevel-dark),
+                -4px -4px 6px var(--bevel-light);
+    padding: 5px;
+}
+.bevel-inset {
+    border-radius: 29px;
+    background: var(--background-main);
+    box-shadow: inset 4px 4px 6px var(--bevel-dark),
+                inset -4px -4px 6px var(--bevel-light);
+    padding: 5px
+}
+
+.bevel-button {
+    border-radius: 29px;
+    background: linear-gradient(145deg, #e7f1fa, #c2cbd3);
+    box-shadow:  4px 4px 6px var(--bevel-dark),
+                -4px -4px 6px var(--bevel-light);
+    padding: 11px;
+    border: none;
+    outline: none;
+}
+.bevel-button:focus {
+    background: linear-gradient(145deg, #c2cbd3, #e7f1fa);
+    box-shadow:  4px 4px 6px var(--bevel-dark),
+                -4px -4px 6px var(--bevel-light);
+}
+
+.left { float: left; }
+.right { float: right; }
+.center { 
+    text-align: center;
+    display: block;
+    margin: auto;
+}
+
+.circle { border-radius: 50%; }
+
+a {
+    text-decoration: none;
+    color: #003870;
+}
+a:hover {
+    color: #025eb9;
+}
